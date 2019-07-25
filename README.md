@@ -18,7 +18,7 @@ This project is a way to get (most) of the benefits of hosted build - specifical
 
 It does this by dynamically provisioning and destroying VM's on demand.  It's not feasible to do this "just-in-time" when a build is queued, because if every build had to wait for a VM to be created, that would likely be unacceptably slow.  Instead it will create a pool of ready-to-go VM's that any queued builds will consume (you configure how big you want this pool to be). It will monitor your builds, and the VM's and automatically destroy the VM's once they are done running a build, and replenish the pool of VM's as needed.
 
-This is implemented as an Azure Function + SQL Azure Database. The source code is published on GitHub [LINK HERE]. There's a bit of a setup/configuration involved to get it up and running.  Instructions for all this are below.
+This is implemented as an Azure Function + SQL Azure Database. The source code is published on GitHub. There's a bit of a setup/configuration involved to get it up and running.  Instructions for all this are below.
 
 NOTE: I've only tested this with Azure DevOps (in the cloud), not Azure DevOps Server - but in theory it should be able to work with both.  The DevOps API calls may need a couple tweaks, if anybody wants to try it and report back (and/or submit a PR) that would be great.
 
