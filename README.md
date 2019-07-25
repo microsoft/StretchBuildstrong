@@ -11,7 +11,7 @@ However, there are a few common reasons why teams may not be able to use the hos
 
 3. You want a bigger beefier build machine to speed up your builds.  Hosted build servers are always a Standard DS2_v2 (2 cores, 7 GB RAM).
 
-When teams run into these limitations they have to resort to standing up their own private build servers (which could still be done using Azure VM's), but this means they now have to manage and operate those VM's (e.g. security patches); they have to carefully plan capacity and choose the right number of build servers to create - too many and you're wasting money/resources, too few and you're builds will spend a bunch of time sitting in queues; and you don't get the repeatability/predictability benefits of a fresh VM for every build.
+When teams run into these limitations they have to resort to standing up their own private build servers (which could still be done using Azure VM's), but this means they now have to manage and operate those VM's (e.g. security patches); they have to carefully plan capacity and choose the right number of build servers to create - too many and you're wasting money/resources, too few and your builds will spend a bunch of time sitting in queues; and you don't get the repeatability/predictability benefits of a fresh VM for every build.
 
 ## My Solution - Stretch Buildstrong
 This project is a way to get (most) of the benefits of hosted build - specifically elasticity, and a fresh VM per build - but with private build servers, that live on a VNet of your choice, using a VM image of your choice, and on a VM size of your choice.
