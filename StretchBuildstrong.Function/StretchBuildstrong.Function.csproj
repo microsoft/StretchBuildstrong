@@ -9,7 +9,7 @@
     <PackageReference Include="Microsoft.Azure.Management.Compute.Fluent" Version="1.23.0" />
     <PackageReference Include="Microsoft.Azure.Management.Fluent" Version="1.23.0" />
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.28" />
-    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
     <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.6.1" />
